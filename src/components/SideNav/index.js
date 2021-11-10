@@ -122,6 +122,18 @@ function SideNav({ history }) {
                     Overview
                   </Option>
                 </BasicLink>
+                <BasicLink to="/accounts">
+                  <Option
+                    activeText={
+                      (history.location.pathname.split('/')[1] === 'accounts' ||
+                        history.location.pathname.split('/')[1] === 'account') ??
+                      undefined
+                    }
+                  >
+                    <List size={20} style={{ marginRight: '.75rem' }} />
+                    Profiles
+                  </Option>
+                </BasicLink>
                 <BasicLink to="/tokens">
                   <Option
                     activeText={
@@ -131,7 +143,7 @@ function SideNav({ history }) {
                     }
                   >
                     <Disc size={20} style={{ marginRight: '.75rem' }} />
-                    Tokens
+                    Tasks
                   </Option>
                 </BasicLink>
                 <BasicLink to="/pairs">
@@ -143,20 +155,7 @@ function SideNav({ history }) {
                     }
                   >
                     <PieChart size={20} style={{ marginRight: '.75rem' }} />
-                    Pairs
-                  </Option>
-                </BasicLink>
-
-                <BasicLink to="/accounts">
-                  <Option
-                    activeText={
-                      (history.location.pathname.split('/')[1] === 'accounts' ||
-                        history.location.pathname.split('/')[1] === 'account') ??
-                      undefined
-                    }
-                  >
-                    <List size={20} style={{ marginRight: '.75rem' }} />
-                    Accounts
+                    Bets
                   </Option>
                 </BasicLink>
               </AutoColumn>
@@ -165,12 +164,7 @@ function SideNav({ history }) {
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
               <Link href="https://uniswap.org" target="_blank">
-                Uniswap.org
-              </Link>
-            </HeaderText>
-            <HeaderText>
-              <Link href="https://v1.uniswap.info" target="_blank">
-                V1 Analytics
+                NerveGlobal.org
               </Link>
             </HeaderText>
             <HeaderText>

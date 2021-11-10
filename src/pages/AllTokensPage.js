@@ -27,7 +27,7 @@ function AllTokensPage() {
     <PageWrapper>
       <FullWrapper>
         <RowBetween>
-          <TYPE.largeHeader>Top Tokens</TYPE.largeHeader>
+          <TYPE.largeHeader>Top Tasks</TYPE.largeHeader>
           {!below600 && <Search small={true} />}
         </RowBetween>
         {/* <AutoRow gap="4px">

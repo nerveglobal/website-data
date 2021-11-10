@@ -73,7 +73,7 @@ function GlobalPage() {
       <ContentWrapper>
         <div>
           <AutoColumn gap="24px" style={{ paddingBottom: below800 ? '0' : '24px' }}>
-            <TYPE.largeHeader>{below800 ? 'Uniswap Analytics' : 'Uniswap Analytics'}</TYPE.largeHeader>
+            <TYPE.largeHeader>{below800 ? 'Data Analytics' : 'Data Analytics'}</TYPE.largeHeader>
             <Search />
             <GlobalStats />
           </AutoColumn>
@@ -133,7 +133,7 @@ function GlobalPage() {
           <ListOptions gap="10px" style={{ marginTop: '2rem', marginBottom: '.5rem' }}>
             <RowBetween>
               <TYPE.main fontSize={'1.125rem'} style={{ whiteSpace: 'nowrap' }}>
-                Top Tokens
+                Top Tasks
               </TYPE.main>
               <CustomLink to={'/tokens'}>See All</CustomLink>
             </RowBetween>
@@ -144,7 +144,7 @@ function GlobalPage() {
           <ListOptions gap="10px" style={{ marginTop: '2rem', marginBottom: '.5rem' }}>
             <RowBetween>
               <TYPE.main fontSize={'1rem'} style={{ whiteSpace: 'nowrap' }}>
-                Top Pairs
+                Top Bets
               </TYPE.main>
               <AutoRow gap="4px" width="100%" justifyContent="flex-end">
                 <CheckBox

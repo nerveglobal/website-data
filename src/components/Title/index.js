@@ -67,7 +67,7 @@ export default function Title() {
                   undefined
                 }
               >
-                Tokens
+                Tasks
               </Option>
             </BasicLink>
             <BasicLink to="/pairs">
@@ -78,7 +78,7 @@ export default function Title() {
                   undefined
                 }
               >
-                Pairs
+                Bets
               </Option>
             </BasicLink>
 
@@ -90,7 +90,7 @@ export default function Title() {
                   undefined
                 }
               >
-                Accounts
+                Profiles
               </Option>
             </BasicLink>
           </RowFixed>

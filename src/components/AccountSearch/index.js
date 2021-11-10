@@ -108,7 +108,7 @@ function AccountSearch({ history, small }) {
         {!small && (
           <Panel>
             <DashGrid center={true} style={{ height: 'fit-content', padding: '0 0 1rem 0' }}>
-              <TYPE.main area="account">Saved Accounts</TYPE.main>
+              <TYPE.main area="account">Saved Profiles</TYPE.main>
             </DashGrid>
             <Divider />
             {savedAccounts?.length > 0 ? (
@@ -136,14 +136,14 @@ function AccountSearch({ history, small }) {
                 )
               })
             ) : (
-              <TYPE.light style={{ marginTop: '1rem' }}>No saved accounts</TYPE.light>
+              <TYPE.light style={{ marginTop: '1rem' }}>No saved profiles</TYPE.light>
             )}
           </Panel>
         )}
 
         {small && (
           <>
-            <TYPE.main>{'Accounts'}</TYPE.main>
+            <TYPE.main>{'Profiles'}</TYPE.main>
             {savedAccounts?.length > 0 ? (
               savedAccounts.map((account) => {
                 return (
@@ -164,7 +164,7 @@ function AccountSearch({ history, small }) {
                 )
               })
             ) : (
-              <TYPE.light>No pinned wallets</TYPE.light>
+              <TYPE.light>No saved profiles</TYPE.light>
             )}
           </>
         )}

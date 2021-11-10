@@ -66,7 +66,6 @@ function PinnedData({ history, open, setSavedOpen }) {
           <StyledIcon>
             <Bookmark size={16} />
           </StyledIcon>
-          <TYPE.main ml={'4px'}>Saved</TYPE.main>
         </RowFixed>
         <StyledIcon>
           <ChevronRight />
@@ -75,7 +74,7 @@ function PinnedData({ history, open, setSavedOpen }) {
       <AccountSearch small={true} />
       <AutoColumn gap="40px" style={{ marginTop: '2rem' }}>
         <AutoColumn gap={'12px'}>
-          <TYPE.main>Pinned Pairs</TYPE.main>
+          <TYPE.main>Tasks</TYPE.main>
           {Object.keys(savedPairs).filter((key) => {
             return !!savedPairs[key]
           }).length > 0 ? (
@@ -107,11 +106,11 @@ function PinnedData({ history, open, setSavedOpen }) {
                 )
               })
           ) : (
-            <TYPE.light>Pinned pairs will appear here.</TYPE.light>
+            <TYPE.light>No saved tasks</TYPE.light>
           )}
         </AutoColumn>
         <ScrollableDiv gap={'12px'}>
-          <TYPE.main>Pinned Tokens</TYPE.main>
+          <TYPE.main>Bets</TYPE.main>
           {Object.keys(savedTokens).filter((key) => {
             return !!savedTokens[key]
           }).length > 0 ? (
@@ -140,7 +139,7 @@ function PinnedData({ history, open, setSavedOpen }) {
                 )
               })
           ) : (
-            <TYPE.light>Pinned tokens will appear here.</TYPE.light>
+            <TYPE.light>No saved bets</TYPE.light>
           )}
         </ScrollableDiv>
       </AutoColumn>
